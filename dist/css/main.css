@@ -1,0 +1,294 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,700);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700);
+body, html {
+  height: 100%;
+  padding: 0;
+  font-family: Proxima Nova, Georgia, sans-serif;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+.container-fluid {
+  margin: 0;
+}
+
+.main {
+  height: 100%;
+}
+
+.menu {
+  width: 240px;
+  background: white;
+  position: fixed;
+  height: 100%;
+  box-sizing: border-box;
+  box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.08);
+  z-index: 10000;
+}
+
+.menu .logo {
+  padding: 10px;
+  font-family: Proxima Nova, Georgia, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  background: #0667D6;
+  color: white;
+  height: 50px;
+}
+
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu ul li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.menu ul li a {
+  padding: 10px 12px;
+  margin: 0;
+  color: #586A7D;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: Proxima Nova, Georgia, sans-serif;
+}
+
+.menu ul li a i {
+  font-size: 20px;
+  text-align: center;
+  width: 25px;
+  margin-right: 6px;
+}
+
+.menu ul li a:hover {
+  background: #ededed !important;
+  text-decoration: none;
+}
+
+.menu ul li.head {
+  color: black;
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 7px 12px;
+}
+
+.menu ul li.active a {
+  color: #0667D6;
+  border-left: 3px solid #0667D6;
+}
+
+.menu ul li.active > a:after {
+  border-color: transparent #f7f8fb transparent transparent;
+  border-style: solid;
+  border-width: 6px;
+  content: "";
+  height: 0;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 0;
+}
+
+.menu #dropdown {
+  border: 0;
+  margin-bottom: 0;
+  border-radius: 0;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.menu #dropdown .caret {
+  float: right;
+  margin: 9px 5px 0;
+}
+
+.menu #dropdown .indicator {
+  float: right;
+}
+
+.menu #dropdown .panel-body {
+  padding: 0;
+  background-color: #f7f7f7;
+}
+
+.menu #dropdown .panel-body .navbar-nav {
+  width: 100%;
+}
+
+.menu #dropdown .panel-body .navbar-nav li {
+  padding-left: 15px;
+}
+
+.menu #dropdown .panel-body .navbar-nav li:last-child {
+  border-bottom: none;
+}
+
+.menu #dropdown .panel-body .panel > a {
+  margin-left: -20px;
+  padding-left: 35px;
+}
+
+.menu #dropdown .panel-body .panel-body {
+  margin-left: -15px;
+}
+
+.menu #dropdown .panel-body .panel-body li {
+  padding-left: 30px;
+}
+
+.main {
+  height: 100%;
+  position: fixed;
+  margin-left: 240px;
+  width: calc(100% - $tam-menu);
+}
+
+.main .topnav {
+  height: 50px;
+  background: #0961c5;
+  color: white;
+  z-index: 10000;
+  padding: 5px;
+}
+
+.main .topnav .nav-link {
+  color: white;
+}
+
+.main .topnav .opcoes {
+  margin-left: 10px;
+  margin-top: 8px;
+}
+
+.main .topnav .opcoes a {
+  font-weight: normal;
+  color: white;
+  padding: 5px;
+}
+
+.main .topnav .opcoes a:hover {
+  text-shadow: 0 0 0.7px #fff;
+}
+
+.main .conteudo {
+  padding: 15px;
+  background: #EDF1F5;
+}
+
+.main .conteudo .quadro {
+  background: #ffffff;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+}
+
+.main .conteudo .quadro:hover, .main .conteudo .quadro:active {
+  box-shadow: 0 0 36px #dee2e5;
+}
+
+.main .conteudo label {
+  font-weight: bold;
+}
+
+.main h1, .main h2, .main h3, .main h4, .main h5, .main h6 {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.main h1 {
+  font-size: 24px;
+}
+
+.main h2 {
+  font-size: 22px;
+}
+
+.main h3 {
+  font-size: 20px;
+}
+
+.main h4 {
+  font-size: 18px;
+}
+
+.main h5 {
+  font-size: 16px;
+}
+
+.main h6 {
+  font-size: 14px;
+}
+
+.bg-primary {
+  background: #283593 !important;
+}
+
+.c-offcanvas {
+  left: 0;
+  padding: 1rem;
+  overflow-y: hidden;
+}
+
+.js-offcanvas a {
+  color: #337ab7;
+  outline: 0;
+  font-weight: bold;
+}
+
+.js-offcanvas .dropdown-menu {
+  position: relative;
+  border: none;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.no-gutters > .col,
+.no-gutters > [class*="col-"] {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.quebra {
+  height: 50px;
+}
+
+/* Main body section */
+.side-body {
+  margin-left: 310px;
+}
+
+.mobile .main {
+  margin-left: 0;
+  width: 100%;
+}
+
+.mobile .menu {
+  display: none;
+}
+
+.mobile .icones a {
+  font-size: 10px !important;
+  padding: 2px !important;
+}
